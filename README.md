@@ -1,19 +1,25 @@
-# sv
+# Hello Web
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+[![CI](https://github.com/meister/hello-web/actions/workflows/ci.yml/badge.svg)](https://github.com/meister/hello-web/actions/workflows/ci.yml)
 
-## Creating a project
+This is a simple Hello World app which can be used for any kind of quick testing. Simply download, fork or checkout the app and do what you like. I use it to test and develop Kubernetes manifests or Helm charts. A simple app that reports a container's hostname, IP and client IP.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Using
+
+To create a production version of your app:
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+npm run build
 ```
 
+You can preview the production build with `npm run preview`.
+
+To run the app, just run:
+
+```bash
+
+node build
+```
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
@@ -25,14 +31,6 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+## License
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+See the [LICENSE](./LICENSE.md) file for license rights and limitations (MIT).
