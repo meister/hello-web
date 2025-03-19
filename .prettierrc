@@ -10,6 +10,36 @@
 			"options": {
 				"parser": "svelte"
 			}
+		},
+		{
+			"files": "*.md",
+			"options": {
+				"parser": "markdown",
+				"tabWidth": 2,
+				"useTabs": false,
+				"singleQuote": false,
+				"trailingComma": "none",
+				"printWidth": 100
+			}
+		},
+		{
+			"files": "*.json",
+			"options": {
+				"parser": "json",
+				"tabWidth": 2,
+				"useTabs": false,
+				"singleQuote": false,
+				"trailingComma": "none"
+			}
+		},
+		{
+			"files": ["*.yaml", "*.yml"],
+			"options": {
+				"parser": "yaml",
+				"singleQuote": false,
+				"tabWidth": 2,
+				"useTabs": false
+			}
 		}
 	]
 }
