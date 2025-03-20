@@ -10,9 +10,10 @@ COPY . .
 RUN npm run build
 RUN npm prune --production
 
-FROM node:20 AS run
+FROM node:20-alpine AS run
 
 ENV NODE_ENV=production
+EXPOSE 3000
 
 WORKDIR /app
 COPY --from=build /app/build ./build

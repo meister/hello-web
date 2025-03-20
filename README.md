@@ -4,6 +4,8 @@
 
 This is a simple Hello World app which can be used for any kind of quick testing. Simply download, fork or checkout the app and do what you like. I use it to test and develop Kubernetes manifests or Helm charts. A simple app that reports a container's hostname, IP and client IP.
 
+![Hello Web](hello-web.png)
+
 ## Build and Run
 
 To create a production version of your app:
@@ -36,6 +38,15 @@ Use as base image in Dockerfile:
 ```Dockerfile
 FROM ghcr.io/meister/hello-web:latest
 ```
+
+## Environment Variables
+
+You have a bit of customisation available as well via environment variables:
+
+| Variable | Default | Description                      |
+| -------- | ------- | -------------------------------- |
+| `NAME`   | `Web`   | Tweak the hello text of the site |
+| `PORT`   | `3000`  | Server port to use               |
 
 ## Developing
 

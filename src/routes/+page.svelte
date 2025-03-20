@@ -2,12 +2,11 @@
 	import type { PageProps } from './$types';
 	import Details from '../components/Details.svelte';
 
-	let name = 'World';
 	let { data }: PageProps = $props();
 </script>
 
 <div class="container">
-	<h1>Hello {name}</h1>
+	<h1>Hello {data.name}</h1>
 	<Details serverHost={data.serverHost} serverIP={data.serverIP} clientIP={data.clientIP} />
 </div>
 
