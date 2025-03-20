@@ -4,7 +4,7 @@
 
 This is a simple Hello World app which can be used for any kind of quick testing. Simply download, fork or checkout the app and do what you like. I use it to test and develop Kubernetes manifests or Helm charts. A simple app that reports a container's hostname, IP and client IP.
 
-## Using
+## Build and Run
 
 To create a production version of your app:
 
@@ -19,6 +19,20 @@ To run the app, just run:
 ```bash
 
 node build
+```
+
+## Docker Images
+
+The Hello Web is also packaged to a docker image for both amd64 and m1 macs.
+
+Install from the command line
+```bash
+$ docker pull ghcr.io/meister/hello-web:latest
+```
+
+Use as base image in Dockerfile:
+```Dockerfile
+FROM ghcr.io/meister/hello-web:latest
 ```
 
 ## Developing
