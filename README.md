@@ -26,11 +26,13 @@ node build
 The Hello Web is also packaged to a docker image for both amd64 and m1 macs.
 
 Install from the command line
+
 ```bash
 $ docker pull ghcr.io/meister/hello-web:latest
 ```
 
 Use as base image in Dockerfile:
+
 ```Dockerfile
 FROM ghcr.io/meister/hello-web:latest
 ```
